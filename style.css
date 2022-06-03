@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(253, 242, 228);
+    font-family: sans-serif;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    font-size: 2rem;
+    margin: 1rem 15rem;
+    /* border: 1px solid red; */
+    box-shadow: 1rem 4rem 15rem 1rem rgb(253, 195, 195);
+}
+#main .buttons button{
+    background-color: blanchedalmond;
+    width: 10vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    /* transition: all 0.5s; */
+}
+#main .buttons button:hover{
+    transform: scale(1.01);
+}
+@media (max-width:850px){
+    #main{
+        font-size: 2rem;
+        margin: 2rem;
+    }
+    #main .buttons button{
+        padding: 0.2rem;
+        margin: 0;
+        width: auto;
+    }
+}
